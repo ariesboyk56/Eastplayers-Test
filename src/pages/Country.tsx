@@ -20,8 +20,6 @@ const Country: React.FC = () => {
   };
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    console.log("test case");
-    
     let { value } = event.target;
     setIsLoading(true);
     clearTimeout(timer.current as NodeJS.Timeout);
@@ -36,20 +34,20 @@ const Country: React.FC = () => {
   const showBody = () => {
     let body;
     if (!isLoading) {
-      return (body =
+      body =
         data &&
         data.map((country: any, index: number) => {
           return <CountryItem key={index} name={country.name.common} />;
-        }));
+        });
     } else {
-      return (body = (
+      body = (
         <div className="loading">
           <img
             id="loading"
             src="http://rpg.drivethrustuff.com/shared_images/ajax-loader.gif"
           />
         </div>
-      ));
+      );
     }
     return body;
   };
