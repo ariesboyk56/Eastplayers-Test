@@ -1,0 +1,42 @@
+.country-container {
+  margin-top: 16px;
+}
+.search-country {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0 16px 16px;
+}
+.search-country__input {
+  position: static;
+  width: 299px;
+  height: 21px;
+  left: 8px;
+  top: 8px;
+  border: none;
+  outline: none;
+}
+.search-country__btn {
+  cursor: pointer;
+  color: #6561f5;
+  font-weight: bold;
+}
+#loading{
+  width: 100px;
+}
+.loading{
+  text-align: center;
+}
+/* CountryItem */
+.country-item {
+  height: 52px;
+  line-height: 52px;
+  border-bottom: #EAEAEA 1px solid;
+  font-weight: bold;
+  text-indent: 16px;
+}

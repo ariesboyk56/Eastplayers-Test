@@ -1,0 +1,51 @@
+.todo-container {
+  margin-top: 16px;
+  padding: 0 16px;
+}
+.search-todo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid #efefef;
+  box-sizing: border-box;
+  border-radius: 8px;
+  user-select: none;
+}
+.search-todo__input {
+  position: static;
+  width: 177px;
+  height: 21px;
+  left: 8px;
+  top: 8px;
+  border: none;
+  outline: none;
+}
+.search-todo__btn {
+  cursor: pointer;
+  position: static;
+  width: 28px;
+  height: 21px;
+  left: 299px;
+  top: 8px;
+  color: #ef4638;
+  font-weight: bold;
+}
+.todo-content__list li,
+.todo-content {
+  color: #000;
+  margin-top: 12px;
+}
+.todo-content__desc {
+  font-weight: bold;
+}
+.undone-tasks {
+  color: #ef4638;
+}
+.todo-content__list {
+  margin-left: 27px;
+}
+.todo-content__list li{
+  cursor: pointer;
+}
