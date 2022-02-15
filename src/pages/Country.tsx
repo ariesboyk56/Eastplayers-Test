@@ -7,7 +7,7 @@ import { apiUrl } from "../api";
 
 const Country: React.FC = () => {
   const [data, setData] = useState<any>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const timer: { current: NodeJS.Timeout | null } = useRef(null);
 
   const getCountry = async (key: string): Promise<any> => {
@@ -20,6 +20,8 @@ const Country: React.FC = () => {
   };
 
   const onChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
+    console.log("test case");
+    
     let { value } = event.target;
     setIsLoading(true);
     clearTimeout(timer.current as NodeJS.Timeout);
